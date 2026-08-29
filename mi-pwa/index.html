@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Punto de Venta</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>Punto de Venta</header>
+    <div class="container">
+        <div class="ticket">
+            <div class="ticket-header">
+                <span><b>Detalle de la cuenta</b></span>
+                <span id="item-count">0 items</span>
+            </div>
+            <div class="ticket-items" id="ticket-list">
+                <p style="color: #777; text-align: center;"><i>Toca un producto abajo para agregarlo</i></p>
+            </div>
+            <div class="total-section">
+                <div class="total-price">Total: $<span id="total-amount">0.00</span></div>
+                <div class="action-btns">
+                    <button class="clear-btn" onclick="limpiarCuenta()">Limpiar</button>
+                    <button class="pay-btn" onclick="procesarCobro()">Cobrar</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu" id="product-menu"></div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+</html>

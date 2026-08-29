@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; margin: 0; background: #f4f4f9; display: flex; flex-direction: column; height: 100vh; }
+header { background: #d32f2f; color: white; padding: 15px; text-align: center; font-size: 1.2rem; font-weight: bold; }
+.container { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
+.ticket { flex: 1; background: white; display: flex; flex-direction: column; border-bottom: 2px solid #ddd; }
+.ticket-header { display: flex; justify-content: space-between; padding: 10px 15px; background: #fafafa; border-bottom: 1px solid #eee; }
+.ticket-items { flex: 1; overflow-y: auto; padding: 10px 15px; }
+.item-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #f0f0f0; }
+.item-info { display: flex; gap: 10px; }
+.item-qty { font-weight: bold; color: #d32f2f; }
+.total-section { padding: 15px; background: #eee; text-align: center; }
+.total-price { font-size: 1.4rem; font-weight: bold; margin-bottom: 8px; }
+.action-btns { display: flex; gap: 10px; }
+.pay-btn { background: #388e3c; color: white; border: none; padding: 12px; flex: 2; font-size: 1.1rem; border-radius: 5px; font-weight: bold; cursor: pointer; }
+.clear-btn { background: #757575; color: white; border: none; padding: 12px; flex: 1; font-size: 1rem; border-radius: 5px; cursor: pointer; }
+.menu { flex: 1.2; overflow-y: auto; padding: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: #eceff1; }
+.product-btn { background: white; border: 1px solid #cfd8dc; padding: 15px; border-radius: 8px; font-size: 1.1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-align: center; cursor: pointer; }
+.product-btn:active { background: #e0e0e0; }
